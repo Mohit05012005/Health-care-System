@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | HealthCare Plus</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(90deg, #0077b6, #00b4d8);
+      padding: 15px 50px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav .logo img {
+      width: 120px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #caf0f8;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(90deg, #0077b6, #00b4d8);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1em;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    /* Mission & Vision */
+    .mission-vision {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 60px 20px;
+      background: #fff;
+      gap: 40px;
+    }
+
+    .card {
+      background: #f1f1f1;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 400px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      color: #0077b6;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-size: 1em;
+      line-height: 1.6;
+    }
+
+    /* Team Section */
+    .team {
+      background: #f9f9f9;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .team h2 {
+      color: #0077b6;
+      margin-bottom: 40px;
+    }
+
+    .team-members {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .member {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .member:hover {
+      transform: translateY(-5px);
+    }
+
+    .member img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .member h3 {
+      color: #0077b6;
+      margin-bottom: 5px;
+    }
+
+    .member p {
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(90deg, #0077b6, #00b4d8);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+      }
+      .mission-vision {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <img src="mylogo.png" alt="HealthCare Plus Logo">
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="request-appointment.html">Request Appointment</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>About HealthCare Plus</h1>
+    <p>At HealthCare Plus, we believe in compassionate, quality, and accessible healthcare for everyone. Our mission is to make every patient’s experience safe, comfortable, and effective.</p>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="mission-vision">
+    <div class="card">
+      <h2>Our Mission</h2>
+      <p>To deliver patient-centered healthcare with excellence in quality, service, and access, ensuring every individual receives the care they deserve.</p>
+    </div>
+    <div class="card">
+      <h2>Our Vision</h2>
+      <p>To be the leading healthcare provider recognized for innovation, compassion, and integrity—bringing health and hope to every community we serve.</p>
+    </div>
+  </section>
+
+  <!-- Our Team -->
+  <section class="team">
+    <h2>Meet Our Team</h2>
+    <div class="team-members">
+      <div class="member">
+        <img src="https://via.placeholder.com/250x200" alt="Doctor 1">
+        <h3>Dr. Priya Sharma</h3>
+        <p>Chief Medical Officer</p>
+      </div>
+      <div class="member">
+        <img src="https://via.placeholder.com/250x200" alt="Doctor 2">
+        <h3>Dr. Rohan Patel</h3>
+        <p>Head of Cardiology</p>
+      </div>
+      <div class="member">
+        <img src="https://via.placeholder.com/250x200" alt="Doctor 3">
+        <h3>Dr. Meera Gupta</h3>
+        <p>Lead Pediatrician</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 HealthCare Plus. All rights reserved.
+  </footer>
+
+  <script>
+    // Highlight active page in navbar
+    document.querySelectorAll('nav ul li a').forEach(link => {
+      if (link.href === window.location.href) {
+        link.style.fontWeight = 'bold';
+        link.style.textDecoration = 'underline';
+      }
+    });
+  </script>
+</body>
+</html>
