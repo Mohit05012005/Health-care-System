@@ -220,7 +220,7 @@ const page1Data = JSON.parse(sessionStorage.getItem('appointmentPage1') || '{}')
     const finalData = { ...page1Data, ...page2Data };
         console.log(finalData);
     try {
-      const response = await fetch('http://localhost:3000/api/v1/appointment', {
+      const response = await fetch('https://health-care-system-backend-sasg.onrender.com/api/v1/appointment', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(finalData)
